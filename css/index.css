@@ -724,6 +724,11 @@ video {
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -989,3 +994,14 @@ video {
     transition-duration: 300ms;
   }
 }
+
+@supports (-webkit-touch-callout: none) {
+	.min-h-screen {
+		min-height: -webkit-fill-available;
+	}
+
+	.sm\:h-screen {
+		height: -webkit-fill-available;
+	}
+}
+
